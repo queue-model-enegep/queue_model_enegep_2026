@@ -1,10 +1,9 @@
-# Setup
-
 This project was built using Python 3.12.3.
+
+## Ubuntu / Debian
 
 Install Graphviz on your system.
 
-**Ubuntu / Debian**
 ```bash
 sudo apt-get update
 sudo apt-get install graphviz
@@ -30,7 +29,7 @@ Install Dependencies.
 pip3 install -r requirements.txt
 ```
 
-On the cloned reposotitory, create a sobfolder named "data". Drag the data files into it.
+On the cloned reposotitory, create a subfolder named "data". Drag the data files into it.
 
 ```bash
 mkdir data
