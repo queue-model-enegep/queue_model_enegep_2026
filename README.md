@@ -15,7 +15,7 @@ sudo apt-get update
 sudo apt-get install graphviz
 ```
 
-Create and activate a virtual envrironment on the project directory.
+Create and activate a virtual environment on the project directory.
 ```bash
 cd queue_model_enegep_2026
 python3 -m venv .venv
@@ -39,7 +39,7 @@ Install Graphviz on your system.
 brew install graphviz
 ```
 
-Create and activate a virtual envrironment on the project directory.
+Create and activate a virtual environment on the project directory.
 ```bash
 cd queue_model_enegep_2026
 python3 -m venv .venv
@@ -63,12 +63,7 @@ Install Graphviz on your system.
 winget install graphviz
 ```
 
-Clone the repository.
-```bash
-git clone <repository-url>
-```
-
-Create and activate a virtual envrironment on the project directory.
+Create and activate a virtual environment on the project directory.
 ```bash
 cd queue_model_enegep_2026
 python -m venv .venv
