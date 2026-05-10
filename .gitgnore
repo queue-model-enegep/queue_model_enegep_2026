@@ -1,0 +1,19 @@
+# Standard files to ignore: virtual environment and pre-compiled files.
+.venv/
+__pycache__/
+
+
+# Data folders to ignore.
+outputs/
+
+
+# Ignoring the video.
+data/service_area_video.mp4
+
+
+# Ignoring the YOLO model.
+*.pt
+
+
+# Ignoring Jupyter Notebooks.
+.ipynb/ 
