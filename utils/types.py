@@ -11,6 +11,3 @@ type TimeInSeconds = float
 
 
 type Scalar = int | float
-
-Units = Literal['m', 's']
-
