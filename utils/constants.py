@@ -6,11 +6,11 @@ from utils.types import Scalar
 
 
 
-# Plot standard dimensions.
+# Standard plot dimensions.
 width: Scalar = 400
 height: Scalar = 180
 
-# Plot colors.
+# Colors for the plots.
 color = '#000000'
 scolor = "#003366"
 tcolor = "#CF3C3C"
