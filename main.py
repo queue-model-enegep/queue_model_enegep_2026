@@ -16,6 +16,8 @@ from utils.execution_helpers import MarkRuntime
 from utils.plotly_templates import table_template
 
 
+
+
 # Creating the folder to hold the outputs.
 output_dir = Path('outputs')
 output_dir.mkdir(exist_ok=True)
@@ -27,16 +29,16 @@ file_path = output_dir / "results.txt"
 plots_dir = output_dir / 'plots'
 plots_dir.mkdir(exist_ok=True)
 
-# Setting the dowload of the plots.
+# Setting the download of the plots.
 d = Downloader(plots_dir)
 
 
-# Getting the data arrivals and for service times.
+# Getting the data for arrivals and for service times.
 df_arrivals = data_handler.get_arrivals_df()
 df_group_arrivals = data_handler.get_arrivals_df(group_arrivals=True)
 df_service_times = data_handler.get_service_time_df()
 
-# Getting the data from the video OpenCV analysis.
+# Getting the data from the OpenCV video analysis.
 df_coordinates = data_handler.get_heatmap_coordinates_df()
 df_occupancy = data_handler.get_occupancy_df()
 
@@ -44,7 +46,7 @@ df_occupancy = data_handler.get_occupancy_df()
 # Core of the project: 
 # running the entire analysis;
 # providing monitoring via terminal;
-# saving the outputs (calculations, plots) on a folder.
+# saving the outputs (calculations and plots) on a folder.
 with MarkRuntime():
     with open(file_path, 'w') as f:
 
