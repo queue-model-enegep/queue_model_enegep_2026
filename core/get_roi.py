@@ -1,8 +1,7 @@
 """
-In order to save the region of interest for it ot base the video analysis,
-call the function "serialize_roi_coordinates" in the if __name__ == '__main__' block.
+In order to save the region of interest for it to base the video analysis,
+call the function "serialize_roi_coordinates" inside the if __name__ == '__main__' block.
 """
-
 
 
 import pickle
@@ -12,12 +11,13 @@ import cv2
 
 
 
+
 VIDEO_PATH = 'data/service_area_video.mp4'
 DISPLAY_WIDTH = 1280 
 
 region_of_interest: list[tuple[int, int]] = []
 
-# Function for 
+# Argument function for setMouseCallback.
 def click_event(event: int, x: int, y: int, flags: int, param: Any) -> None:
     if event == cv2.EVENT_LBUTTONDOWN:
         real_x = int(x / scale_factor)
